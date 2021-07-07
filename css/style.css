@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap');
+
+/* CSS Rest */
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, span, a
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* (1)header Area */
+.nav
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 1em auto;
+    overflow: auto;
+
+}
+
+.nav h1
+{
+    /* border: 2px solid green; */
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a
+{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;  
+    color: #96746b;
+}
+
+.nav ul
+{
+    /* border: 2px solid blue; */
+    width: 50%;
+    float: left;
+    padding-top: 1em;
+    text-align: right;
+}
+
+.nav ul li
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    margin-left: 1em;
+
+}
+.nav ul li a
+{
+    /* 
+    1)set the color to #312a26 
+    2)remove the underlines
+    3)set the font to bold
+    */
+
+    color: #312a26;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* (2)Banner Area */
+.banner
+{
+    /* border: 2px solid red; */
+    background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    width: 100%;
+    position: relative;
+}
+
+.banner-text
+{
+    /* border: solid yellow; */
+    width: 45%;
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-text h2
+{
+    /* 1) change it all to capital letters
+       2) set the font size, 4 times the current font size 
+    */
+    color: #c7a17a;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.banner-text h2 span /* Fresh Taste */
+{
+    color: #96746b;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-text p
+{
+    color:#fff;
+}
+
+.banner-text a
+{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 700;
+    background-color: #312a26;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+/* (3)Ads Area */
+.ads
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items
+{
+    /* border: 2px solid green; */
+    width: 48.5%;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.ads-item1
+{
+    background-image: url('../images/ads-img1.jpg');
+    margin-right: 3%;
+}
+
+.ads-item2
+{
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text
+{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ads-text h3
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px #312a26;
+}
+/* (4)Merchandises Area */
+.merch
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header
+{
+    text-align: center;
+}
+
+.section-header span
+{
+    /* 
+        1)set the color to #c7a17a
+        2)set the font weight to medium of ralway
+        3)make the letters slanted
+    */
+    color: #c7a17a;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.section-header h2
+{
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr
+{
+    background-color:#c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.merch-gallery
+{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items
+{
+    /* border: 2px solid green; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+}
+
+.merch-items img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /*same with background-size: cover*/
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8)
+{
+    margin-right: 0;
+}
+.merch-items span
+{
+    font-family: 'Oswald' , 'sans-serif';
+}
+
+/* (5)Discount Area */
+.discount
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+
+.discount-text
+{
+    /* border: 2px spolid yellow; */
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.discount-text span
+{
+    /* 
+        1)set the color to white
+        2)make the letters slanted
+        3)set the text shadow same with the one in ads-text h3
+    */
+    color:#fff;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text h2
+{
+    /* 
+        1)set the font size 2 times the current font size
+        2)set the color to white
+        3)make it all capital letters
+        4)same text shadow with discount-text span
+    */
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a
+{
+    /* 
+        1)remove the underline
+        2)set the display to  inline-block
+        3)spaces all around inside the border of 1em
+        4)background color to white, we will fix the transparency of backgroung later
+        5)set the color of the text to #312a26
+        6)make it bold
+        7)put space on top (outside the border) of 1em
+    */
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color:rgba(255, 255, 255, 0.5);
+    color: #312a26;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+/* (7) Ads Area */
+.ads-item3
+{
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 3%;
+}
+
+.ads-item4
+{
+    background-image: url('../images/ads-img4.jpg');
+}
+
+.ads-item5
+{
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 3%;
+}
+
+.ads-item6
+{
+    background-image: url('../images/ads-img6.jpg');
+}
+
+/* (8)Reservation Area */
+.reservation 
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+form
+{
+    overflow: auto;
+}
+
+.form-group
+{
+    /* border: 2px solid blue; */
+    width: 49.5%;
+    float: left;
+    height: 650px;
+    background-color: #f2f2f2;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.form-group:nth-child(1)
+{
+    margin-right: 1%
+}
+
+form input,
+form label, 
+form select,
+form textarea
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    width: 100%
+}
+
+form label
+{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 0.5em
+}
+
+form p
+{
+    /* border: 2px solid blue; */
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+.res-time
+{
+    text-align: center;
+}
+
+.res-time *
+{
+    width: auto;
+}
+
+form h3
+{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form h3::after
+{
+    content:"";
+    background-image: url("../images/reservation-cards.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.res-agreement *
+{
+    width: auto;
+}
+
+form input[type="submit"]
+{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* (9)Footer Area */
+.footer
+{
+    /* border: 2px solid red; */
+    background-image: url("../images/footer-img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.footer-content
+{
+    /* border: 2px solid yellow; */
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.footer-widgets
+{
+    /* border: 2px solid green; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+}
+
+.footer-widgets:nth-child(4)
+{
+    margin-right: 0;
+}
+
+.footer-widgets h3
+{
+    color:#fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-widgets th,
+.footer-widgets td
+{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-widgets h4
+{
+    color: #fff;
+}
+
+.footer-widgets p
+{
+    color: #c7a17a;
+}
+
+.footer-form *
+{
+    width: auto;
+}
+
+/* (10) Social Footer Area */
+.social-footer
+{
+    background-color: #19100F;
+    color: #fff;
+    overflow: auto; 
+    padding: 1em 7.5%;
+}
+
+.social-widgets
+{
+    /* border: 2px solid yellow; */
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.social-widgets img
+{
+    width: 1.5em;
+}
+.social-widgets h3
+{
+    text-transform: uppercase;
+}
